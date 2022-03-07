@@ -1,0 +1,99 @@
+Dal branch develop staccare feature branch, al termine riportare le modifiche su develop:
+
+SPRINT 1:
+
+In pair programming, ogni coppia di dev esegue un task:
+
+1. creare una pagina login.html con un form di login. Al login passa alla pagina main.html
+2. creare una pagina main.html con titolo e un'elenco di link alle pagine:
+    a. elenco studenti (elenco_studenti.html)
+    b. comandi principali di Git (comandi_principali.html)
+    c. Git workflow (gitflow.html)
+3. creare una pagina elenco_studenti.html con la lista parziale degli studenti
+4. creare un css 'style01.css' con la definizione degli stili dei tag di base (html, body, h1, p, ecc...)
+5. creare un css 'style02.css' con la definizione degli stili dei tag di base (html, body, h1, p, ecc...)
+6. creare un css 'style03.css' con la definizione degli stili dei tag di base (html, body, h1, p, ecc...)
+7. creare il file 'comandi_principali.html' con la lista dei seguenti comandi:
+    a. git init ('comandi/init.html')
+    b. git status ('comandi/status.html')
+    c. git add ('comandi/add.html')
+    d. git commit ('comandi/commit.html')
+8. nella cartella 'comandi' creare il file 'init.html' con titolo e descrizione del comando nella forma:
+    <h1>Git <comando></h1>
+    <p>descrizione del comando</p>
+9. nella cartella 'comandi' creare il file 'status.html' con titolo e descrizione del comando nella forma:
+    <h1>Git <comando></h1>
+    <p>descrizione del comando</p>
+10. nella cartella 'comandi' creare il file 'status.html' con titolo e descrizione del comando nella forma:
+    <h1>Git <comando></h1>
+    <p>descrizione del comando</p>
+11. nella cartella 'comandi' creare il file 'add.html' con titolo e descrizione del comando nella forma:
+    <h1>Git <comando></h1>
+    <p>descrizione del comando</p>
+12. nella cartella 'comandi' creare il file 'add.html' con titolo e descrizione del comando nella forma:
+    <h1>Git <comando></h1>
+    <p>descrizione del comando</p>
+13. creare una pagina 'gitflow.html' con elenco e descrizione dei vari branch del flow: main, develop, release, qa_testing
+
+FINE SPRINT 1: rilascio in test 
+
+14. dal branch di develop staccare sul branch qa_testing
+15. un team effetta il debug del sito, e trova i bug: viene alimentato un elenco dei bug
+16. per ogni bug, un team stacca un branch di fix, effettua il fix su qa_testing e poi riallinea develop a qa_testing
+
+NEL FRATTEMPO GLI ALTRI INIZIANO LO SPRINT 2:
+17. aggiungere a 'comandi_principali' i link alle pagine degli altri comandi git: 
+18. 'comandi/clone.html'
+19. 'comandi/fetch.html'
+20. 'comandi/pull.html'
+21. 'comandi/merge.html'
+22. 'comandi/checkout.html'
+23. 'comandi/merge.html'
+24. 'comandi/log.html'
+    
+25. copiare il file style01.css in style.css e aggiungere a tutte le pagine html il link allo stile 'style.css' 
+    (mancheranno le nuove pagine in sviluppo)
+26. alcuni team aggiungono all'elenco studenti gli studenti che mancano (i due membri del team) 
+    (ci saranno conflitti durante il merge su develop)
+
+FINE SPRINT 2:
+26. i bachi sono stati corretti, staccare una nuova release 1.0
+27. creare 3 branch da develop che utilizzano gli stili 01, 02 e 03
+    a. team 1 copia dentro style -> style01: branch ab_test/style01
+    b. team 2 copia dentro style -> style02: branch ab_test/style02
+    c. team 3 copia dentro style -> style03: branch ab_test/style03
+28. da qa_testing creare l'elenco delle pagine non stilate, e creare i fix 
+29. un team effettua la verifica della release 1.0 e se necessario elenca gli hot fix da svolgere
+30. allineamo tutto:
+    - tutti i bug fix riportati su qa_testing vengono riportati su develop
+    - tutte le hotfix effettuate su release vengono riportate su main, develop e qa_testing
+    - i 3 branch di a/b test si ribasano su develop
+    - si rilascia la versione 1.1 se occorre
+
+SPRINT 3:
+
+31. aggiungere a 'gitflow.html' la sezione:
+    <h2>sviluppo di una feature</h2>
+    <p>descrizione del procedimento...</p>
+
+32. aggiungere a 'gitflow.html' la sezione:
+    <h2>rilascio in Q/A</h2>
+    <p>descrizione del procedimento...</p>
+
+33. aggiungere a 'gitflow.html' la sezione:
+    <h2>Fix di un bug in Q/A</h2>
+    <p>descrizione del procedimento...</p>
+
+34. aggiungere a 'gitflow.html' la sezione:
+    <h2>Rilascio di una versione</h2>
+    <p>descrizione del procedimento...</p>
+
+35. aggiungere a 'gitflow.html' la sezione:
+    <h2>Hotfix di un bug in produzione</h2>
+    <p>descrizione del procedimento...</p>
+
+36. allineare tutti i branch in develop (merge conflicts)
+37. rilasciare una versione in Q/A
+38. un team verifica in Q/A e crea eventuali bugfix
+39. rilascio della versione 2.0
+40. riallineamento dei branch di A/B testing sulla versione 2.0
