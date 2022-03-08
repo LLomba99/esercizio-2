@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+html {
+    font-family: Georgia, serif;
+}
+
+body {
+    background-color: DarkSlateGrey;
+    color: whitesmoke;
+    margin: 0px;
+    padding: 10%;
+}
+
+h1 {
+    color:cornsilk;
+    font-size: larger;
+}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+div {
+    background-color: rgb(86, 126, 99);
+    margin: 0px;
+    padding: 10%;
+    width: 100vw;
+    border-radius: 2px;
+}
+
+ul {
+    list-style-type: square;
+  }
+  
+
+
